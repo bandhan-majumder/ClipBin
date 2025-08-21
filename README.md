@@ -41,6 +41,18 @@ Go to the project directory
   cd ClipBin
 ```
 
+### With Docker
+
+```bash
+  docker build -t clip-bin .
+```
+
+Once the image is ready, run it with
+```bash
+ docker run -it -p 5000:5000 -v $(pwd):/usr/src/app clip-bin
+```
+
+### Without Docker (Manual Steps)
 Install dependencies
 
 ```bash
