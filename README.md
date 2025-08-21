@@ -59,6 +59,13 @@ Install dependencies
   pip3 install -r requirements.txt
 ```
 
+copy the .env.example file and add a secret key
+```bash
+  cp .env.example .env
+```
+
+run `openssl rand -hex 32` and add the result in the value of `SECRET_KEY`
+
 Start the server
 
 ```bash
